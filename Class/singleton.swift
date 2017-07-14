@@ -14,4 +14,10 @@ class Manager: NSObject {
         }
         return Static.instance
     }
+
+  public static let shared: Manager = {
+    let instance = Manager()
+    // setup code
+    return instance
+  }()
 }
